@@ -24,7 +24,7 @@ public class WelcomeActivity extends AppCompatActivity {
             throw new RuntimeException("Missing parameters!");
         }
         final String name = intentThatLaunchedThisActivity.getStringExtra(PARAM_NAME);
-        final TextView textViewWelcome = (TextView) findViewById(R.id.textview_welcome);
+        final TextView textViewWelcome = (TextView) findViewById(R.id.textViewWelcome);
         welcomeMessage = getString(R.string.welcome, name);
         textViewWelcome.setText(welcomeMessage);
     }

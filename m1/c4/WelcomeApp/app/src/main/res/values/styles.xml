@@ -8,8 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Instructions" parent="AppTheme">
+        <item name="android:textSize">@dimen/instructionsText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="TextViewWelcome" parent="AppTheme">
-        <item name="android:textSize">@dimen/welcome_text</item>
+        <item name="android:textSize">@dimen/welcomeText</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:gravity">center</item>
     </style>
 
