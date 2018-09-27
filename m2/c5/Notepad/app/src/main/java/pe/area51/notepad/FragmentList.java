@@ -158,13 +158,16 @@ public class FragmentList extends Fragment {
                 view = convertView;
                 viewHolder = (ViewHolder) convertView.getTag();
             }
-            viewHolder.titleTextView.setText(note.getTitle());
-            final String trimmedTitle = note.getTitle().trim();
+            String noteTitle = note.getTitle().trim();
+            if (noteTitle.length() == 0) {
+                noteTitle = getContext().getString(R.string.untitled_note);
+            }
+            viewHolder.titleTextView.setText(noteTitle);
             viewHolder.thumbnailImageView.setImageDrawable(
                     TextDrawable
                             .builder()
                             .buildRound(
-                                    trimmedTitle.length() > 0 ? "" + note.getTitle().charAt(0) : "",
+                                    String.valueOf(noteTitle.charAt(0)),
                                     colorGenerator.getColor(position)
                             )
             );

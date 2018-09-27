@@ -7,4 +7,6 @@
     <string name="hint_note_content">Ingresa el contenido&#8230;</string>
 
     <string name="delete_note">Eliminar Nota</string>
+
+    <string name="untitled_note">Nota sin título.</string>
 </resources>
