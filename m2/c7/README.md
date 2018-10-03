@@ -1,0 +1,2 @@
+- AccelerometerTest: Ejemplo del servicio de sensores (Sensor Service) con acelerómetro.
+- LocationApp: Sobre cómo utilizar el servicio de ubicación de Android (Android Location Service).
